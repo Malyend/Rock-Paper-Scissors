@@ -1,0 +1,75 @@
+html{
+    background-color: black;
+}
+
+body {
+    display: flex;
+    width: 50%;
+   
+    margin: auto;
+
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+@keyframes game {
+    0%{
+        background-image: -moz-radial-gradient( to right, red, yellow);
+        transition: 2s;
+    } 
+
+    20%{
+        background-image: -webkit-linear-gradient(to left, blue, green);
+    }
+
+    40%{
+        background-image: -moz-radial-gradient(to bottom, red, yellow);
+    }
+}
+
+.nameOf{
+
+    animation-name: game;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+    background-image: -moz-linear-gradient(to top, red, yellow);
+}
+
+.popup {
+    background-color: aliceblue;
+    flex-direction: column;
+
+    justify-content: center;
+    text-align: center;
+
+    flex: 1;
+}
+
+.popup p {
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    display: inline;
+}
+
+.popup button{
+    padding: 1.5rem;
+    margin: 2rem;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 0;
+    border-radius: 1.4rem;
+    transition: 2s;
+}
+
+.popup button:active {
+    background-color: darkred;
+}
+.popup button:hover {
+    font-size: 1.5rem;
+    transition: 2s;
+
+    cursor: pointer;
+}
