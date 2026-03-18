@@ -5,8 +5,6 @@
     // call it five times. So that you play five rounds
     let humanScore = 0;
     let computerScore = 0;
-    let paraChoice = document.getElementById("AddPara");
-
     function playGame(){
         
 
@@ -63,7 +61,6 @@ function getComputerChoice(){
 
          humanChoice = getUserChoice();
          computerChoice = getComputerChoice();
-        
 
          console.log(humanChoice, computerChoice);
 
@@ -72,28 +69,35 @@ function getComputerChoice(){
                 alert("draw!")
                 break;
             case (humanChoice == "rock" && computerChoice == "paper"):
-                paraChoice.textContent = "Oh shucks playa! ya lost. Paper beats rock";
                 computerScore++;
+                alert("Oh shucks playa! Ya lost. Paper beats rock" + "score: " + `${humanScore}` + ":" +  
+                    `${computerScore}`)
+                
                 break;
             case (humanChoice == "scissors" && computerChoice == "rock"):
-                paraChoice.textContent = "well.. that's a fail, you've been smashed. rock pummels scissors."
                 computerScore++;
+                alert("well.. that's a fail, you've been smashed. rock pummels scissors. " + "score: "+ `${humanScore}` + ":" +  
+                    `${computerScore}`)
                 break;
             case (humanChoice == "paper" && computerChoice == "scissors"):
-                paraChoice.textContent ="Oof- that stings, you've failed. scissors cuts paper."
                 computerScore++;
+                alert("Oof- that stings, you've failed. scissors cuts paper. " + "score: " + `${humanScore}` + ":" +  
+                    `${computerScore}`)
                 break;
             case (computerChoice == "rock" && humanChoice == "paper"):
-                paraChoice.textContent = "Way to go! you've won! the rock has been restrained"
                 humanScore++;
+                alert("Way to go! you've won! the rock has been restrained " + "score: " + `${humanScore}` + ":" +  
+                    `${computerScore}`)
                 break;
             case (computerChoice == "scissors" && humanChoice == "rock"):
-                paraChoice.textContent = "AND THE WINNER IS--- YOU! scissors have been OBLITORATED"
                 humanScore++;
+                alert("AND THE WINNER IS--- YOU! scissors have been OBLITORATED " + "score: " + `${humanScore}` + ":" +  
+                    `${computerScore}`)
                 break;
             case (computerChoice == "paper" && humanChoice == "scissors"):
-                paraChoice.textContent = "feeling a lil bit stabby eh? You win! scissors cut through paper!"
                 humanScore++;
+                alert("feeling a lil bit stabby eh? You win! scissors cut through paper! " + "score: " + `${humanScore}` + ":" +  
+                    `${computerScore}`)
                 break;
             default :
             alert("wait... Who brought a gun in here? AHH- ERROR\\404¬\\")
