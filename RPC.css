@@ -73,3 +73,8 @@ body {
 
     cursor: pointer;
 }
+
+.answers {
+    display: flex;
+    flex-direction: column;
+}
