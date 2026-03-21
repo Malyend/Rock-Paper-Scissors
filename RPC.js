@@ -73,7 +73,6 @@ function getComputerChoice(){
                 alert("Oh shucks playa! Ya lost. Paper beats rock" + "score: " + `${humanScore}` + ":" +  
                     `${computerScore}`)
                 
-                break;
             case (humanChoice == "scissors" && computerChoice == "rock"):
                 computerScore++;
                 alert("well.. that's a fail, you've been smashed. rock pummels scissors. " + "score: "+ `${humanScore}` + ":" +  
